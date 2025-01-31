@@ -9,8 +9,12 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter", ...defaultTheme.fontFamily.sans],
-        serif: ["Lora", ...defaultTheme.fontFamily.serif],
+        sans: [
+          "-apple-system", // Apple system font
+          "BlinkMacSystemFont",
+          "Inter", // Fallback for non-Apple devices
+          ...defaultTheme.fontFamily.sans
+        ],
       },
     },
   },

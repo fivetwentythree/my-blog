@@ -18,6 +18,7 @@ body {
 
 body {
   @apply font-sans antialiased;
+  /* other styles */
   @apply flex flex-col;
   @apply bg-stone-100 dark:bg-stone-900;
   @apply text-black/50 dark:text-white/75;
@@ -39,8 +40,7 @@ footer {
 
 article {
   @apply max-w-full prose dark:prose-invert prose-img:mx-auto prose-img:my-auto;
-  @apply prose-headings:font-semibold prose-p:font-serif;
-  @apply prose-headings:text-black prose-headings:dark:text-white;
+  @apply prose-headings:font-semibold;
 }
 
 @layer utilities {
