@@ -12,7 +12,7 @@ export default {
         sans: [
           "-apple-system", // Apple system font
           "BlinkMacSystemFont",
-          "Inter", // Fallback for non-Apple devices
+          "system-ui",
           ...defaultTheme.fontFamily.sans
         ],
       },

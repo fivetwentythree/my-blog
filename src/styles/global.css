@@ -19,9 +19,6 @@ body {
 body {
   @apply font-sans antialiased;
   /* other styles */
-  @apply flex flex-col;
-  @apply bg-stone-100 dark:bg-stone-900;
-  @apply text-black/50 dark:text-white/75;
 }
 
 header {
