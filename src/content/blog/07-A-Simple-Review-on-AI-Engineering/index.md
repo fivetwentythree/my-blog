@@ -37,7 +37,6 @@ When prompting adhere to following best practices
 
 ⠀
 Best thing is to have a separate prompts.py file
-![](Pasted%20Graphic%202.png)
 
 You can use the pydantic BaseModel to ensure type safety 
 
