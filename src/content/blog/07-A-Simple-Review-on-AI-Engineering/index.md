@@ -4,62 +4,27 @@ description: "What the future holds"
 date: "01/31/2025"
 ---
 
-In context learning - model will learn new information from the prompts, for example if the python documentation is outside the knowledge cutoff the model will learn from the prompt which save these new prompts from getting outdated 
+Understanding Transformers: The Technology Reshaping Artificial Intelligence
 
-Each example provided is called a shot
+Imagine having a conversation with someone who can understand not just your words, but also how they relate to each other and the broader context of what you're saying. This is similar to what transformer models do, and they've revolutionized how computers process and understand language, images, and other types of information.
 
-And using few examples to teach the model how to respond is called few shot prompting 
+At their core, transformers are a type of artificial intelligence architecture that excels at understanding relationships between different pieces of information. Think of them as super-efficient pattern recognizers that can process many things simultaneously, rather than one at a time like older AI systems.
 
-If no example was given then it becomes zero shot prompting 
-Which seems to be the case for most of the latest models for most of the time
+Let's break this down with an everyday example. When you're reading a sentence, you naturally understand how each word relates to the others. In the sentence "The cat sat on the mat because it was tired," you instantly know that "it" refers to the cat, not the mat. This kind of understanding, which seems obvious to us, was surprisingly difficult for earlier AI systems to grasp. Transformers excel at making these connections, which is why they've become so fundamental to modern AI.
 
-The number of examples are limited by the models context length and this barrier has also surpassed by latest gemini models and the upcoming DL paradigm which is called Titan if it come to see the day (not sure google will opensource the  exact model data)
+One of the key innovations of transformers is something called "attention." Imagine you're at a crowded party, and despite all the noise, you can focus on a single conversation while being aware of everything else happening around you. Transformers work similarly – they can pay attention to multiple pieces of information simultaneously, giving more weight to the parts that matter most for understanding the current context.
 
-If the system prompt and the user prompt was given the model will combine the two following a template 
+These models have practical applications that you might encounter daily. When you use Google Translate, chat with AI assistants, or get auto-complete suggestions while typing, you're likely interacting with transformer-based systems. They're also behind recent advances in generating images from text descriptions and even helping scientists understand protein structures.
 
-Why having a better system prompt is good - she mentions two possible reasons, one is the system prompt is being fed into the system first then so it will prime the model to answer the user prompt most effectively 
+What makes transformers particularly special is their ability to learn from vast amounts of information and apply that knowledge in flexible ways. Unlike earlier AI systems that needed to be carefully trained for very specific tasks, transformers can often transfer their learning from one type of task to another, similar to how humans can apply knowledge from one situation to help understand a new one.
 
-Second some of the models seems to be made to look for system prompts and pay more attention to the system prompt and closely follow the instructions given in the prompt 
+However, it's important to understand that while transformers are powerful, they're not magical. They can make mistakes and can be limited by the quality and quantity of data they've been trained on. They're tools that complement human intelligence rather than replace it.
 
-Not all parts in a prompt are equal, model is much better at understanding the prompt at the begging and the end. 
+The impact of transformers extends beyond just language processing. They're being used in scientific research, healthcare, creative arts, and many other fields. For instance, they're helping doctors analyze medical images, assisting scientists in predicting protein structures, and even helping composers create new music.
 
-There is test to check this which is called a needle in the haystack, - a piece of information is being fed into different parts of the prompt and ask the model to find it 
+As this technology continues to evolve, we're likely to see even more applications that make our lives easier and open up new possibilities. The key is to understand both their capabilities and limitations, so we can use them effectively while being aware of their constraints.
 
-When prompting adhere to following best practices
-* Write clearly[^1]
-* Ask the model to adopt a persona
-* Provide examples 
-* Specify the output format - you can ask to avoid unnecessary preambles 
-* Provide sufficient context - which will save the model from hallucinating 
-* Break complex tasks into subtasks 
-* Give the model time to think - this is same as chain of though prompting and this seems to be less used in the industry because of the recent reasoning models, CoT thinking is more intuit into these newer models - this is also known as self critique techniques 
-* 
-
-⠀
-Best thing is to have a separate prompts.py file
-
-You can use the pydantic BaseModel to ensure type safety 
-
-This is how the neural networks are taught - or more specifically trained - this part is not the natural order I need to have in this particular document but this part is important 
-
-The method used to train NN - backpropagation 
-
-It has two parts - forward pass and backward pass 
-
-During the forward pass - computing the output from the input 
-
-Backward pass - updating the model weights according to the aggregated signal of the forward pass
-
-Oversimplified version of what’s happen during the backwardness is like this
-
-1. The computed values of the forward pass is compared with the expected values which are knowns as ground truths - if these show significant variations then it is called LOSS - the main aim of an NN is to minimize this number
-
-2. How much this variation is caused by adjusting the parameters can be identified and calculated using the GRADIENT - this is the derivative of the loss respect to each trainable parameter
-3. Trainable parameters are adjusted accordingly , how much the parameter has to be adjusted is determined by an OPTIMIZER - like SGD and ADAM - transformers use Adam 
-
-
-I need to see how this works
-
+Think of transformers as powerful tools that have helped bridge the gap between how humans process information and how computers can assist us in doing so. They're not perfect, but they represent a significant step forward in making artificial intelligence more useful and accessible in our daily lives.
 
 
 

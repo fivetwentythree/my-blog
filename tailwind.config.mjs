@@ -10,7 +10,10 @@ export default {
     extend: {
       fontFamily: {
         sans: [
-          "-apple-system", // Apple system font
+          "Gill Sans",
+          "Gill Sans MT",
+          "Calibri",
+          "-apple-system",
           "BlinkMacSystemFont",
           "system-ui",
           ...defaultTheme.fontFamily.sans
