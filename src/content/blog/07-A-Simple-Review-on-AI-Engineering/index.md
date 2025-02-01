@@ -58,7 +58,7 @@ Oversimplified version of what’s happen during the backwardness is like this
 3. Trainable parameters are adjusted accordingly , how much the parameter has to be adjusted is determined by an OPTIMIZER - like SGD and ADAM - transformers use Adam 
 
 
-
+I need to see how this works
 
 
 
