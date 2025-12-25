@@ -4,8 +4,8 @@
 
 @layer base {
   @font-face {
-    font-family: 'Gill Sans';
-    src: local('Gill Sans');
+    font-family: 'Google Sans';
+    src: local('Google Sans');
     font-display: swap;
   }
 }
